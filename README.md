@@ -4,12 +4,15 @@ This Assignment is made using nodejs,express,mongodb,mongoose,twilio
 This project is deployed using heroku and here the link-
 https://goodhealth.herokuapp.com
 
+
 # How to run
 # Step1-
 Install all the packages using npm install
 
 # Step2-
 Now to need to run project using npm start
+# Step3-
+Run it on browser using https://localhost:3000
 
 # Features-
 
