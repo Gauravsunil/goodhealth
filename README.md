@@ -1,5 +1,5 @@
 # GoodHealth Assignment 
-This Assignment is made using nodejs,express,mongodb,mongoose,twilio
+This Assignment is made using nodejs,express,mongodb,mongoose,twilio and all the configuration files for pwa is in public folder
 # -
 This project is deployed using heroku and here the link-
 https://goodhealth.herokuapp.com
@@ -15,7 +15,7 @@ const serviceID= "VA78cc399a640068afa797f5154835623f";
 const accountSID="ACb5610c884cae355ac42843783891714e";    
 const authToken="deafa45bb397f134fad82d95e6616238";   
 
-Paste the above code   in routes/users.js because the twilio is roating the authToken when i upload it on github for security purpose
+Paste the above code   in routes/users.js because the twilio is roating the authToken for security purposes when i upload it on github and make my repository public that's why
 So before running the code you need to paste them in routes/users.js
 Now to need to run project using npm start
 # Step3-
