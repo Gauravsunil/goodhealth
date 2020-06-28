@@ -2,10 +2,12 @@ var express = require('express');
 const fs=require("fs");
 var router = express.Router();
 const Users=require('../models/users');
+//--------------------Uncomment the below comment of serviceId,accountID and authToken---------------
 
-// const serviceID= "VA78cc399a640068afa797f5154835623f"
-// const accountSID="ACb5610c884cae355ac42843783891714e";
-// const authToken="565392198b4bdcb6c1efefd14f041b88";
+/* const serviceID= "VA78cc399a640068afa797f5154835623f"
+ const accountSID="ACb5610c884cae355ac42843783891714e";
+ const authToken="565392198b4bdcb6c1efefd14f041b88";
+ */
 
 
 const client=require("twilio")(accountSID,authToken);
