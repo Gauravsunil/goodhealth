@@ -7,11 +7,16 @@ https://goodhealth.herokuapp.com
 
 # How to run
 # Step1-
-Install all the packages using npm install
+Install all the packages using npm install 
 
 # Step2-
-Uncomment accountSID,serviceID,authToken  in routes/users.js because the twilio is roating the authToken when i upload it on github for security purpose
-So before running the code you need to uncomment them in routes/users.js
+
+const serviceID= "VA78cc399a640068afa797f5154835623f"
+const accountSID="ACb5610c884cae355ac42843783891714e";
+const authToken="deafa45bb397f134fad82d95e6616238";
+
+Paste the above code   in routes/users.js because the twilio is roating the authToken when i upload it on github for security purpose
+So before running the code you need to paste them in routes/users.js
 Now to need to run project using npm start
 # Step3-
 Run it on browser using https://localhost:3000
