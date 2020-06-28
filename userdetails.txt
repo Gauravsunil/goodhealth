@@ -1,0 +1,2 @@
+{"user_name":"sunil","email":"sunil1489@gmail.com","password":"1234","mobile_no":"992393775"}
+{"user_name":"vishu","email":"vishal1489@gmail.com","password":"1489","mobile_no":"7988103820"}{"user_name":"vishu","email":"vishal1489@gmail.com","password":"1489","mobile_no":"7988103820"}{"user_name":"guru","email":"gauravsunil1489@gmail.com","password":"1489","mobile_no":"8708624322"}

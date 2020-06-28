@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <% include ./partials/head %>
+  </head>
+  <body>
+    <% include ./partials/header %> 
+    <div class="container">
+      <div class="col-xs-10 col-md-5 col-xs-offset-1 col-md-offset-4 block">
+          <h2>Log In</h2>
+          <% if(status==='wrong'){%>
+            <div class="alert alert-danger">
+              <p>Wrong Credentials!</p>
+            </div>
+            <% } %>
+        <form action="/users/login" method="post">
+          <div class="form-group">
+            <label htmlFor="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label htmlFor="Password">Password</label>
+            <input type="password" name="password" id="password" class="form-control" required>
+          </div>
+          
+          <button type="submit" class="btn btn-success">Login</button>
+        </form>
+      </div>
+    </div>
+    <script src="/javascripts/sw.js"></script>
+
+  </body>
+</html>

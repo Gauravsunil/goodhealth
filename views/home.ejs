@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <% include ./partials/head %>
+  </head>
+  <body>
+    <% include ./partials/header %> 
+    <div class="container">
+      <div class="jumbotron" style="background-color:rgb(182, 233, 102);">
+        <h1> Good Health Welcome</h1>
+        <h2><%= data.user_name %></h2>
+        <h3><%= data.email %></h3>
+      </div>  
+      
+    </div>
+    <script src="/javascripts/sw.js"></script>
+  </body>
+</html>

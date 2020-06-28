@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <% include ./partials/head %>
+  </head>
+  <body>
+    <% include ./partials/header %> 
+    <div class="container">
+      <div class="col-xs-10 col-md-5 col-xs-offset-1 col-md-offset-4 block">
+          <h2>Send OTP</h2>
+          <% if(status==='not exists'){%>
+            <div class="alert alert-danger">
+              <p>Mobile No not Registered</p>
+            </div>
+            <% } %>
+        <form action="/users/loginmobile" method="post">
+          <div class="form-group">
+            <label htmlFor="mobile_no">Mobile Number</label>
+            <input type="text" name="mobile_no" id="mobile_no" class="form-control" required>
+          </div>
+          <button type="submit" class="btn btn-success">Send Code</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

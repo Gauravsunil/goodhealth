@@ -1,0 +1,16 @@
+{
+    "short_name":"Good-Health",
+    "name":"Good Health App",
+    "icons": [
+        {
+          "src": "/../images/icon.png",
+          "sizes": "144x144",
+          "type": "image/png"
+        }
+      ],
+    "start_url":"/",
+    "display":"standalone",
+    "theme_color":"#000000",
+    "orientation":"portrait",
+    "background_color":"#ffffff"
+}

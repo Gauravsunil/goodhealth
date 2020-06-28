@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <% include ./partials/head %>
+  </head>
+  <body>
+    <% include ./partials/header %> 
+    <div class="container">
+      <div class="col-xs-10 col-md-5 col-xs-offset-1 col-md-offset-4 block">
+        <h2>Sign Up</h2>
+        <%if(status==="ok") { %>
+          <div class="alert alert-success">
+            <p>Succesfully Registered</p>
+          </div>
+          <% } else if(status==='already'){%>
+            <div class="alert alert-danger">
+              <p>Already Registered</p>
+            </div>
+            <% } %>
+        <form action="/users/register" method="post">
+          <div class="form-group">
+            <label htmlFor="user_name">User Name</label>
+            <input type="text" name="user_name" id="user_name" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label htmlFor="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label htmlFor="Password">Password</label>
+            <input type="password" name="password" id="password" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label htmlFor="mobile_no">Mobile Number</label>
+            <input type="text" name="mobile_no" id="mobile_no" class="form-control" required>
+          </div>
+          <button type="submit" class="btn btn-success">Register</button>
+        </form>
+      </div>
+    </div>
+    <script src="/javascripts/sw.js"></script>
+
+  </body>
+</html>
