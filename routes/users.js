@@ -3,9 +3,9 @@ const fs=require("fs");
 var router = express.Router();
 const Users=require('../models/users');
 
- const serviceID="VAfadd466fba47b75989d57c2e6a2ea8d3"
-  const accountSID="ACd487f65b687c7bb5b3f47960ece6907f"
-  const authToken="74354d3cc32fe1cb6f62b5d734512874"
+// const serviceID= "VA78cc399a640068afa797f5154835623f"
+// const accountSID="ACb5610c884cae355ac42843783891714e";
+// const authToken="565392198b4bdcb6c1efefd14f041b88";
 
 
 const config=require('./config');
