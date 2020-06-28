@@ -8,7 +8,6 @@ const Users=require('../models/users');
 // const authToken="565392198b4bdcb6c1efefd14f041b88";
 
 
-const config=require('./config');
 const client=require("twilio")(accountSID,authToken);
 
 /* GET users listing. */
