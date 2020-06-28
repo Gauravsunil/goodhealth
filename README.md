@@ -1,5 +1,8 @@
 # GoodHealth Assignment 
 This Assignment is made using nodejs,express,mongodb,mongoose,twilio
+# -
+This project is deployed using heroku and here the link-
+https://goodhealth.herokuapp.com
 
 # How to run
 # Step1-
