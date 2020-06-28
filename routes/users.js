@@ -3,8 +3,13 @@ const fs=require("fs");
 var router = express.Router();
 const Users=require('../models/users');
 
+ const serviceID="VAfadd466fba47b75989d57c2e6a2ea8d3"
+  const accountSID="ACd487f65b687c7bb5b3f47960ece6907f"
+  const authToken="74354d3cc32fe1cb6f62b5d734512874"
+
+
 const config=require('./config');
-const client=require("twilio")(config.accountSID,config.authToken);
+const client=require("twilio")(accountSID,authToken);
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
@@ -60,7 +65,7 @@ router.post('/loginmobile',(req,res,next)=>{
     if(user){
         client
         .verify
-        .services(config.serviceID)
+        .services(serviceID)
         .verifications
         .create({
           to:`+91${req.body.mobile_no}`,
@@ -82,7 +87,7 @@ router.post('/verify/:mobile',(req,res,next)=>{
 
   client
   .verify
-  .services(config.serviceID)
+  .services(serviceID)
   .verificationChecks
   .create({
     to:`+91${req.params.mobile}`,
