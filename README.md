@@ -13,7 +13,7 @@ Install all the packages using npm install
 
 const serviceID= "VA78cc399a640068afa797f5154835623f";   
 const accountSID="ACb5610c884cae355ac42843783891714e";    
-const authToken="deafa45bb397f134fad82d95e6616238";   
+const authToken="c40a9bf5d6e8f899bffd273880755bd0";   
 
 Paste the above code   in routes/users.js because the twilio is rotating the authToken for security purposes when i upload it on github and make my repository public that's why
 So before running the code you need to paste them in routes/users.js
